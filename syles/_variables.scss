@@ -1,0 +1,10 @@
+$primaryBtn: rgb(46, 126, 146);
+$textColor: rgb(2, 36, 46);
+
+@mixin flexCenter($direction) {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: $direction;
+}

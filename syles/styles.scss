@@ -1,0 +1,23 @@
+@import "./variables";
+@import "./header";
+@import url("https://fonts.googleapis.com/css2?family=Montserrat&display=swap"); // Montserrat Font
+
+body {
+  font-family: "Montserrat", sans-serif;
+}
+
+.contact {
+  @extend header;
+  // @include flexCenter(row);
+  background: whitesmoke;
+  // width: 100% - 20%;
+  // margin: auto;
+  button {
+    &:hover {
+      transform: scale(1.4) rotate(0deg) translateY(0px);
+    }
+    &::after {
+      content: "";
+    }
+  }
+}
